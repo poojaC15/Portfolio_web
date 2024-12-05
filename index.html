@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.congif.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+</head>
+
+<body class="overflow-x-hidden leading-8  dark:bg-black">
+    <div class="fixed top-0 right-0 w-11/11 -z-5 translate-y-[-90%] dark:border-gray-500">
+        <img src="./images/bg_header.jpg" alt="" class="w-full">
+    </div>
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        
+        <img src="./images/logo.png" alt="logo" class="  w-15 cursor-pointer mr-11">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-4 bg-white shadow-sm bg-opacity-50">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+        
+        <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-3 border border-gray-700 rounded-full ml-4">Contact  </a>      
+       
+        <button  class="block md:hidden ml-4" onclick="openMenu()">
+            <img src="./images/menu.png" alt="" class="w-6">
+        </button>
+    </div>
+    <div>
+        <!--mobile view------>
+        <ul id="sidemenu" class="flex md:hidden flex-col py-20 px-10  gap-4 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./images/circle-x.png" alt="" class="w-5">
+            </div>
+            
+            <li><a href="#home" onclick="closeMenu()">Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#education" onclick="closeMenu()">Education</a></li>
+            <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+            <li><a href="#exp" onclick="closeMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul> 
+    </div>
+    </nav>
+
+    <!--header of the site-->
+
+    <div id="home" class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+       <img src="./images/Profile_pic.jpeg" alt="" class="rounded-full w-32 relative">
+       <h3 class="text-3xl sm:text-6xl lg:text-[66px]">
+        Hi, I'm Pooja Chaudhary
+       </h3>
+       <h5 class=" text-black mt-2 text-1xl sm:text-4xl lg:text-[50px]">A <span id="typed"></span></h5>
+       <p class="text-xl mx-auto max-w-2xl">Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</p>
+       <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+        <a href="#contact" class="px-10 py-3 border rounded-full  border-gray-500  bg-gradient-to-r from-[#9496e9] to-[#e5aeee] text-white flex items-center gap-2">contact
+            <img src="./images/contact_Arrow.png" alt="" class="w-4">
+        </a>
+        <a href="https://shorturl.at/sunme" class="px-10 py-3 border rounded-full border-gray-500 bg-gradient-to-r from-[#9496e9] to-[#e5aeee] text-white flex items-center gap-2"> My Resume
+            <img src="./images/Download_arrow.png" alt="" class="w-4">
+        </a>
+       </div>
+    </div>
+<!-----------About me Section------->
+<div  id="about" class="w-full px-[12%] py-10">
+   
+    <h2 id="about" class="text-center text-5xl"> About me</h2>
+    <div class="flex w-full flex-col  lg:flex-row items-center gap-20 m-20">
+        <div class="max-w-max mx-auto ">
+            <img src="./images/side_pic.jpeg" alt="" class="w-64 sm:w-85 rounded-3xl max-w-none" >
+        </div>
+        <div class="flex-1">
+            <p class="">Hello, my name is Pooja Chaudhary, and I am a recent graduate of MGM University, where I completed my B.Tech in Computer Science and Engineering in 2024.During my academic journey, I developed a strong foundation in programming languages like C++, Python, and web technologies such as HTML5, CSS3, JavaScript, and SQL. I have expertise in Data Structures and Algorithms, Object-Oriented Programming, and Agile development methodologies like SCRUM, along with version control systems like Git and GitHub
+                <P>Professionally, I gained hands-on experience as a Shopify Developer (Remote) at Higroove Systems Pvt. Ltd.where I enhanced customer experiences by developing and optimizing Shopify webpages, banners, and flyers.</P>
+                </p>
+                <p>Prior to this, I worked as a Software Developer Intern (Remote) at MD Consultancy Solutions Pvt. Ltd., where I built responsive web pages using HTML, CSS, and JavaScript</p>
+                <p>Beyond technical skills, I take pride in my communication, teamwork, and problem-solving abilities, which have allowed me to thrive in collaborative and dynamic environments.</p>
+                <p>Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.</p>
+        </div>
+    </div>
+
+</div>
+<!-------------------------------Eduction Section --------------------------------->
+<div id="education" class="w-full px-[12%] py-10 ">
+    <h2  class="text-center text-5xl"> Education</h2>
+    <br>
+    <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+        
+            <p>
+               <b>Jawaharlal Nehru Engineering College, MGM
+                    University (2020-2024)</b>
+              </p>
+              <p >Chh. Sambhaji Nagar,Maharashtra, India</p>
+              <p>
+                <b>Degree: </b>Bachelor of Technology 
+                <br>
+                <b>Major:</b>Computer Science and Engineering
+                <br>
+                <b>CGPA: </b>7.85/10
+              </p>
+              
+                <b>Relevant Coursework:</b>
+                
+                 Data Structures,
+                Algorithms,
+                Computer Networks,
+                Database Management System,
+                Operating Syetems,
+                Structured Query Language.
+              
+              
+    </div>
+
+
+</div>
+<!------------------------------------------------Skills------------------------------------------>
+    <div id="skills" class="w-full px-[12%] py-10">
+        <h2 class="text-center text-5xl">Skills</h2>
+        <br>
+        <div>
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl items-center">
+            <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                <b>Programming Languages </b>
+                <ul class="list-disc ml-4">
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Javascript</li>
+             
+                
+                    <li>HTML</li>
+                    <li>CSS / Tailwind CSS</li>
+                
+                </ul>
+            </li>
+         
+          
+            <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                <b>Tools And Software</b>
+                <ul class="list-disc ml-4">
+                    <li>Object Oriented Programming</li>
+                    <li>Agile (Scrum)</li>
+                    <li>Git</li>
+                   <li>Vs Code</li>
+                    <li>Google Colab</li>
+                
+                </ul>
+            
+            </li>
+          
+          
+            <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                <b>Database And Others </b>
+                <ul class="list-disc ml-4">
+                    <li>MySQL</li>
+                    <li>Scikit Learn</li>
+                    <li>Wordpress</li>
+                    <li>Bootstrap</li>
+                    <li>Elementor</li>
+                    
+                </ul>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+
+    <!---------------------------------------------Experience--------------------------->
+
+    <div id="exp" class="w-full px-[12%] py-10">
+        <h2 class="text-center text-5xl">Experience</h2>
+        <br>
+    
+         <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+        
+            <b>Shopify Developer (june 2024-Nov 2024) </b>
+                <h2>Higroove Systems </h2>
+                <ul class="list-disc ml-4">
+                    <li>Developed and optimized Shopify webpages, banners, and flyers, enhancing the customer experience</li>
+                    <li>Improved site load times by 40% through caching, image compression, and CDN integration, enhancing SEO
+                        performance.</li>
+                    <li>Implemented WooCommerce for 6 e-commerce sites, configuring products, payment gateways, and shipping
+                        methods.</li>
+                </ul>
+              
+              
+           </div>
+           <br>
+           <div class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+        
+              <b>Software Developer (june 2024-Nov 2024) </b>
+                <h2> MD Consultancy Solutions Pvt. Ltd. </h2>
+                 <ul class="list-disc ml-4">
+                    <li>Gained hands-on experience with WordPress technology during an internship, including building a complete
+                        website.</li>
+                    <li>Integrated and configured 4+ plugins, resulting in a 30% improvement in site performance and a 25% increase in
+                        user engagement metrics.</li>
+                    <li> Gained hands-on experience developing responsive web pages using HTML, CSS, and JavaScript</li>
+                </ul>
+          
+          
+             </div>
+
+       </div>
+
+       <!--------------------------Projects-------------------------->
+       <div id="projects" class="w-full px-[12%] py-1 scroll-mt-20">
+        <h2 class="text-center text-5xl">My Projects</h2>
+        <div class="grid grid-cols-auto lg:grid-cols-3 sm:grid-cols-2   gap-8 my-10 ">
+            <!-------1st Project-->
+            
+
+            <div class="border border-gray-400 rounded-lg px-2 py-3   p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                <img src="./images/Movie.png" alt="" class="w-full object-cover ">
+                <h3 class="text-lg my-4 text-gray-700 text-center"><b>FilmFinder</b></h3>
+                <p class="text-sm text-gray-700 leading-5">Created a movie recommendation system in Python using pandas and Scikit-Learn, featuring an intuitive user interface. Implemented collaborative filtering and content-based algorithms to predict user preferences, resulting in increased watch time and engagement.</p>
+                <a href="https://github.com/poojaC15/movie-Recommendation-System" class="flex items-center gap-4 text-sm mt-5">Click Here <img src="./images/link.png" class="w-4"></a>
+            </div>
+
+            <!------2nd project---------->
+
+            <div class="border border-gray-400 rounded-lg px-2 py-3   p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                <img src="./images/Tic_Tac_toe_game.png" alt="" class="w-full object-cover ">
+                <h3 class="text-lg my-4 text-gray-700 text-center"><b>XOXO Challenge</b></h3>
+               
+                <p class="text-sm text-gray-700 leading-5 flex-grow">Tic Tac Toe is a two-player web game created with HTML, CSS, and JavaScript. Players take turns marking a 3x3 grid to align three symbols in a row. The game includes a reset feature .</p>
+                <a href="https://github.com/poojaC15/Tic_Tac_Toe" class="flex items-center gap-4 text-sm mt-5 ">Click Here <img src="./images/link.png" class="w-4 "></a>
+            </div>
+
+            <!---------3rd Project---------->
+
+            
+            <div class="border border-gray-400 rounded-lg px-2 py-3   p-6 cursor-pointer hover:bg-[#d6d1e2] hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                <img src="./images/Gym_img.png" alt="" class="w-full object-cover ">
+                <h3 class="text-lg my-4 text-gray-700 text-center"><b>GymGenius</b></h3>
+                <p class="text-sm text-gray-700 leading-5">esigned and developed a visually appealing and user-friendly gym webpage using HTML and CSS, focused on enhancing the experience for fitness enthusiasts while effectively showcasing services and offerings.</p>
+                <a href="https://poojac15.github.io/gym-webpage/" class="flex items-center gap-4 text-sm mt-5 ">Click Here <img src="./images/link.png" class="w-4"></a>
+            </div>
+
+        </div>
+
+    <!-------------------------------------Contact-------------------------------->
+    <div id="contact" class="w-full px-[12%] py-10 scroll-mt-20 bg-[length:90%_auto] bg-center  ">
+        <h2 class="text-center text-5xl"> Connect with me</h2>
+         <form method="POST" action="https://api.web3forms.com/submit" class="max-w-2xl mx-auto">
+            <input type="hidden" name="access_key" value="85349507-642c-4ee7-a922-6274c5635597">
+            <div class="grid  grid-cols-auto sm:grid-cols-2 lg:grid-cols-2 gap-6 mt-10 mb-8">
+                <input type="text" placeholder="Enter your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="name">
+                
+                <input type="email" placeholder="Enter your email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white" required name="email">
+            </div>
+            <textarea rows="6" placeholder="Enter your message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6" required name="message"></textarea>
+             <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto havor:bg-black duration-500">Summit Now</button>
+         </form>
+    </div>
+<!---------------------------footer--------->
+<div class="mt-20 text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%]  py-6 ">
+    <p>© 2024 Pooja Chaudhary. All rights reserved.</p>
+    <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+        
+        <li>
+            <a href="https://www.linkedin.com/in/pooja-c-062a59230/"><img src="./images/linkedin.png" class="w-6 h-6"></a>
+        </li>
+        <li>
+            <a href="https://github.com/poojaC15"><img src="./images/github.png" class="w-6 h-6"></a>
+
+        </li>
+        <li>
+            <a href="https://x.com/PoojaCh55294237?mx=2"> <img src="./images/twitter.png" class="w-6 h-6"></a>
+        </li>
+    </ul>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
